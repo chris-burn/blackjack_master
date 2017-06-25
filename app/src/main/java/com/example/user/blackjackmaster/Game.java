@@ -8,12 +8,6 @@ import java.util.ArrayList;
 
 public class Game {
 
-
-//    TODO compare hands
-//    TODO decide winner
-//    TODO bust logic method
-//    TODO extension, play game
-
     Player player;
     House house;
     ArrayList<Player> players;
@@ -25,19 +19,6 @@ public class Game {
     }
 
 
-    private void displayWinner(int result) {
-        switch (result) {
-            case 0:
-                System.out.println("Tie!");
-                break;
-            case 1:
-                System.out.println("Player wins");
-                break;
-            case -1:
-                System.out.println("House wins");
-        }
-    }
-
     public void addPlayerToPlayersArray(Player player) {
         players.add(player);
     }
@@ -46,16 +27,22 @@ public class Game {
         return players.size();
     }
 
+
+//    TODO compare hands
+//    TODO decide winner
+//    TODO bust logic method
+//    TODO extension, play game
+
 //    private boolean isBust(){
 //
 //
 //    }
-
-    public void playGame() {
-
-
-        House houseTotal = house.getTotal();
-        Player playerTotal = player.getTotal();
+//
+//    public void playGame() {
+//
+//
+//        House houseTotal = house.getTotal();
+//        Player playerTotal = player.getTotal();
 
 //        Dealer populates deck (dealer.populateDeck();)
 //        Dealer shuffles deck (dealer.shuffleDeck();) separate function
@@ -100,7 +87,7 @@ public class Game {
 //        compare Player and house hands (int winner = compareHands()) return 0,1 or -1
 //        display winner (house or Players)
 //
-/
+//
 //        Player player1Total = player1.getTotal();
 //        Player player2Total = player2.getTotal();
 //        House houseTotal = house.getTotal();
@@ -113,24 +100,39 @@ public class Game {
 //        int winner = compareHands(houseTotal, playerTotal);
 //        displayWinner(winner);
 
-    }
+//    }
+//
 
-    private int compareHands(int houseTotal, int playerTotal) {
-        if (playerTotal <= 21) && (houseTotal <= 21){
 
-            switch (player) {
-                case WIN:
-                    return (houseTotal < playerTotal ? 1 : -1);
-//            1 is player win, -1 is computer win
-                case PAPER:
-                    return (computerMove == ROCK ? 1 : -1);
-                case SCISSORS:
-                    return (computerMove == PAPER ? 1 : -1);
-                default:
-                    return 0;
-            } }
-    }
+    //    private void displayWinner(int result) {
+//        switch (result) {
+//            case 0:
+//                System.out.println("Tie!");
+//                break;
+//            case 1:
+//                System.out.println("Player wins");
+//                break;
+//            case -1:
+//                System.out.println("House wins");
+//        }
+//    }
+//
+//
+// private int compareHands(int houseTotal, int playerTotal) {
+//        if (playerTotal <= 21) && (houseTotal <= 21){
 
+//            switch (player) {
+//                case WIN:
+//                    return (houseTotal < playerTotal ? 1 : -1);
+////            1 is player win, -1 is computer win
+//                case PAPER:
+//                    return (computerMove == ROCK ? 1 : -1);
+//                case SCISSORS:
+//                    return (computerMove == PAPER ? 1 : -1);
+//                default:
+//                    return 0;
+//            } }
+//    }
 
 
 }

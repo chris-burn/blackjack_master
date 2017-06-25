@@ -24,13 +24,16 @@ public class GameTest {
     @Before
     public void before(){
         game = new Game();
+        player = new Player();
+        players = new ArrayList<>();
     }
 
-//    @Test
-//    public void canAddPlayersToPlayersArray(){
-//        player.drawCard(new Card(CardNumber.KING, CardSuit.DIAMONDS));
-//        assertEquals(1, player.handCount());
-//        players.add(player);
-//        assertEquals(1, players.playerCount());
-//    }
+    @Test
+    public void canAddPlayersToPlayersArray(){
+        player.drawCard(new Card(CardNumber.KING, CardSuit.DIAMONDS));
+        players.add(player);
+        assertEquals(1, player.handCount());
+        assertEquals(1, game.playerCount());
+    }
+
 }
