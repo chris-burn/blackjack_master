@@ -30,6 +30,7 @@ public class DealerTest {
         dealer.populateDeck();
         Card card = dealer.dealCard();
         assertEquals(CardSuit.HEARTS, card.getCardSuit());
+//        pre-shuffle!!!
     }
 
     @Test

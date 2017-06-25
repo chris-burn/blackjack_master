@@ -12,7 +12,7 @@ public interface Playable {
 
     void drawCard(Card card);
     int getTotal();
-    ArrayList<Card> showHand();
+//    ArrayList<Card> showHand();
 
 
 //    public void getHand();

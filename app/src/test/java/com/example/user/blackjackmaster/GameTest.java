@@ -25,15 +25,19 @@ public class GameTest {
     public void before(){
         game = new Game();
         player = new Player();
-        players = new ArrayList<>();
     }
 
     @Test
     public void canAddPlayersToPlayersArray(){
         player.drawCard(new Card(CardNumber.KING, CardSuit.DIAMONDS));
-        players.add(player);
+        game.addPlayerToPlayersArray(player);
         assertEquals(1, player.handCount());
         assertEquals(1, game.playerCount());
     }
+
+//    @Test
+//    public void canCompareHands(){
+//
+//    }
 
 }

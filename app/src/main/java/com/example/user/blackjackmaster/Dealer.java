@@ -24,6 +24,7 @@ public class Dealer {
         for (CardSuit type : CardSuit.values()){
             for (CardNumber number : CardNumber.values()){
                 deck.add(new Card(number, type));
+//                Collections.shuffle(deck);
             }
         }
     }

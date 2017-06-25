@@ -33,7 +33,7 @@ public class Player implements Playable {
         return total;
     }
 
-    public ArrayList<Card> showHand() {
-        return hand;
-    }
+//    public ArrayList<Card> showHand() {
+//        return hand;
+//    }
 }

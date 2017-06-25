@@ -2,6 +2,9 @@ package com.example.user.blackjackmaster;
 
 import java.util.ArrayList;
 
+import deck.CardNumber;
+import deck.CardSuit;
+
 /**
  * Created by user on 25/06/2017.
  */
@@ -33,17 +36,13 @@ public class Game {
 //    TODO bust logic method
 //    TODO extension, play game
 
-//    private boolean isBust(){
-//
-//
-//    }
-//
+
 //    public void playGame() {
 //
 //
 //        House houseTotal = house.getTotal();
 //        Player playerTotal = player.getTotal();
-
+//
 //        Dealer populates deck (dealer.populateDeck();)
 //        Dealer shuffles deck (dealer.shuffleDeck();) separate function
 //        Dealer deals first card to each player
@@ -88,23 +87,29 @@ public class Game {
 //        display winner (house or Players)
 //
 //
-//        Player player1Total = player1.getTotal();
-//        Player player2Total = player2.getTotal();
-//        House houseTotal = house.getTotal();
-//
 //        System.out.println("Player 1 shows value of " + player1.getValue());
 //        System.out.println("Player 2 shows value of " + player2.getValue());
 //        System.out.println("House shows value of " + house.getValue());
-//        if (house.minHand() == false){
+//        if (houseTotal <= 17),
 //
-//        int winner = compareHands(houseTotal, playerTotal);
-//        displayWinner(winner);
+//        int result = compareHands(houseTotal, playerTotal);
+//        displayWinner(result);
+//    }
 
+
+//    private int compareHands(Player playerTotal, House houseTotal) {
+//        for (Player player : players){
+//            if (playerTotal == houseTotal){
+//                return 0;}
+//                    if (player.getTotal() < house.getTotal());{
+//                return -1;}
+//            else (player.getTotal() > house.getTotal();{
+//                return 1;}
+//        }
 //    }
 //
-
-
-    //    private void displayWinner(int result) {
+//
+//    private void displayWinner(int result) {
 //        switch (result) {
 //            case 0:
 //                System.out.println("Tie!");
@@ -116,22 +121,10 @@ public class Game {
 //                System.out.println("House wins");
 //        }
 //    }
-//
-//
-// private int compareHands(int houseTotal, int playerTotal) {
-//        if (playerTotal <= 21) && (houseTotal <= 21){
 
-//            switch (player) {
-//                case WIN:
-//                    return (houseTotal < playerTotal ? 1 : -1);
-////            1 is player win, -1 is computer win
-//                case PAPER:
-//                    return (computerMove == ROCK ? 1 : -1);
-//                case SCISSORS:
-//                    return (computerMove == PAPER ? 1 : -1);
-//                default:
-//                    return 0;
-//            } }
+//    private boolean isBust(){
+//
+//
 //    }
 
 
